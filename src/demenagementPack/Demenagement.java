@@ -11,23 +11,25 @@ public class Demenagement {
 		}
 	
 
-	public void auTravail(int i){
+	public void auTravail(int nbCartons){
 		System.out.println(nom + " possède un camion de capacité : " + capCamion);
 		System.out.println("Début du déménagement");
 		//System.out.println("nbCartons:" + i + " capCamion:" + capCamion);
 		
 		int voyage = 0;
+		int emport;
 		
 		
-		while (i > 0){
+		while (nbCartons > 0){
 			voyage++;
-			if (i <= 9) {
-				System.out.println("emport :" + i);
+			if (nbCartons <= capCamion) {
+				emport = nbCartons;
 			}else{
-				System.out.println("emport :" + capCamion);
+				emport = capCamion;
 			}
-			System.out.println("nbCartons:" + i + " capCamion:" + capCamion + " nbvoyage:" + voyage);
-			i -= capCamion; // on commence le calcul de soustraction
+			System.out.println("emport :" + emport);
+			System.out.println("nbCartons:" + nbCartons + " capCamion:" + capCamion + " nbvoyage:" + voyage);
+			nbCartons -= emport; // on commence le calcul de soustraction
 			
 			
 			
