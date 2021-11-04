@@ -1,4 +1,6 @@
-package demenagementPack ;
+package demenagementPack;
+
+
 
 public class Demenagement {
 	private String nom; // attributs
@@ -14,11 +16,10 @@ public class Demenagement {
 	public void auTravail(int nbCartons){
 		System.out.println(nom + " possède un camion de capacité : " + capCamion);
 		System.out.println("Début du déménagement");
-		//System.out.println("nbCartons:" + i + " capCamion:" + capCamion);
+
 		
 		int voyage = 0;
 		int emport;
-		
 		
 		while (nbCartons > 0){
 			voyage++;
@@ -27,11 +28,8 @@ public class Demenagement {
 			}else{
 				emport = capCamion;
 			}
-			System.out.println("emport :" + emport);
-			System.out.println("nbCartons:" + nbCartons + " capCamion:" + capCamion + " nbvoyage:" + voyage);
+			System.out.println("nbCartons:" + nbCartons + " emport:" + emport +" capCamion:" + capCamion + " nbvoyage:" + voyage);
 			nbCartons -= emport; // on commence le calcul de soustraction
-			
-			
 			
 			//if (i < capCamion){ // quand le calcul est avant l'affichage 
 			//break;
